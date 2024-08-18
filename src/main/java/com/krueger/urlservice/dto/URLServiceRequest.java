@@ -1,4 +1,4 @@
-package com.krueger.urlservice.model;
+package com.krueger.urlservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,8 +1,8 @@
 package com.krueger.urlservice.controller;
 
 import com.krueger.urlservice.model.URLMapping;
-import com.krueger.urlservice.model.URLServiceRequest;
-import com.krueger.urlservice.model.URLServiceResponse;
+import com.krueger.urlservice.dto.URLServiceRequest;
+import com.krueger.urlservice.dto.URLServiceResponse;
 import com.krueger.urlservice.service.URLService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
