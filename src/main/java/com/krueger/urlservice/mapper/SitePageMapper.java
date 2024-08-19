@@ -25,7 +25,7 @@ public class SitePageMapper {
         return pages.parallelStream().map(sitePage -> toDTO(sitePage)).toList();
     }
 
-    private static SitePageDTO toDTO(SitePage sitePage) {
+    public static SitePageDTO toDTO(SitePage sitePage) {
         return new SitePageDTO(
                 sitePage.getName(),
                 sitePage.getDescription(),
