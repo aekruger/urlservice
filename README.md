@@ -1,5 +1,5 @@
 # urlservice
-Studying Spring boot 
+Review Spring boot topics 
 - configuration properties
 - cache
 - JPA
