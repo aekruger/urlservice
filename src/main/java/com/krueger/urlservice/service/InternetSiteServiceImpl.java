@@ -2,9 +2,12 @@ package com.krueger.urlservice.service;
 
 import com.krueger.urlservice.model.InternetSite;
 import com.krueger.urlservice.repository.InternetSiteRepos;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
 public class InternetSiteServiceImpl implements InternetSiteService {
@@ -24,6 +27,16 @@ public class InternetSiteServiceImpl implements InternetSiteService {
                 }
         );
         return repository.save(site);
+    }
+
+    @Override
+    public Page<InternetSite> findAllPaged(int page, int size) {
+        return repository.findAll(PageRequest.of(page, size));
+    }
+
+    @Override
+    public List<InternetSite> findAll() {
+        return repository.findAll();
     }
 
     private static void setInitialDates(InternetSite site) {

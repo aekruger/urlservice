@@ -8,3 +8,5 @@ Review Spring boot topics
 - DTO x Mapper
 - Circuit breaker: Resilience4J
 - Tests
+- Security
+- Pagination
